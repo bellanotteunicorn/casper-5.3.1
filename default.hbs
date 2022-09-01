@@ -102,6 +102,19 @@ $(document).ready(function () {
     $(".gh-content").fitVids();
 });
 </script>
+<!-- https://cdn.jsdelivr.net/npm/sakana-widget@2.2.1/lib/sakana.min.js -->
+<!-- https://cdnjs.cloudflare.com/ajax/libs/sakana-widget/2.2.1/sakana.min.js -->
+<div id="sakana-widget"></div>
+<script>
+  function initSakanaWidget() {
+    new SakanaWidget().mount('#sakana-widget');
+  }
+</script>
+<script
+  async
+  onload="initSakanaWidget()"
+  src="https://cdn.jsdelivr.net/npm/sakana-widget@2.2.1/lib/sakana.min.js"
+></script>
 
 {{!-- Ghost outputs required functional scripts with this tag - it should always be the last thing before the closing body tag --}}
 {{ghost_foot}}
