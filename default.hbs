@@ -32,6 +32,19 @@
                         {{@site.title}}
                     {{/if}}
                 </a>
+
+               <a class="gh-banner" href="https://YOUR-OFFER-URL" style="background-image: url({{asset "dn.jpg"}})">
+    <div class="gh-banner-inner">
+        <div class="gh-banner-left">
+            <p class="gh-banner-headline">Support independent media</p>
+            <p class="gh-banner-cta">Limited-time offer for new subscribers</p>
+        </div>
+        <div class="gh-banner-right">
+            <p class="gh-banner-button">Learn more</p>
+        </div>
+    </div>
+</a>
+
                 <div class="gh-head-brand-wrapper">
                     <button class="gh-search" data-ghost-search>{{> "icons/search"}}</button>
                     <a class="gh-burger" role="button">
@@ -68,7 +81,6 @@
     <div class="site-content">
         {{!-- All other templates get inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
-        <a href="https://www.buymeacoffee.com/loliconnetwork"><img src="https://img.buymeacoffee.com/button-api/?text=Buy we a coffee&emoji=🌈&slug=loliconnetwork&button_colour=40DCA5&font_colour=ffffff&font_family=Arial&outline_colour=000000&coffee_colour=FFDD00" /></a>
     </div>
 
     {{!-- The global footer at the very bottom of the screen --}}
